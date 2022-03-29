@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 
+/* eslint-disable @next/next/no-html-link-for-pages */
+
 const Home: NextPage = () => {
   return (
     <>
