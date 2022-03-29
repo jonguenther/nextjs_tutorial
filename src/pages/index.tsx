@@ -8,10 +8,25 @@ const Home: NextPage = () => {
     <>
       <div style={{ margin: 'auto', textAlign: 'center' }}>
         <h1>Hello world</h1>
-        <div>
-          <a href="/directlink">This is a direct link</a>
+        <div style={{ display: 'grid' }}>
+          <a
+            href="/directlink"
+            style={{
+              paddingBottom: '1rem',
+              color: 'green',
+              textDecoration: 'underline',
+            }}
+          >
+            This is a direct link
+          </a>
           <Link href={'/nextlink'}>
-            <a>
+            <a
+              style={{
+                paddingBottom: '1rem',
+                color: 'red',
+                textDecoration: 'underline',
+              }}
+            >
               This is a <code>next/link</code> link
             </a>
           </Link>
